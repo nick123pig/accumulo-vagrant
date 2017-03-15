@@ -19,7 +19,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     ambari.vm.hostname = "ambari"
     ambari.vm.network :private_network, ip: "192.168.64.101"
     ambari.vm.network "forwarded_port", guest: 50095, host: 50095
-
+    ambari.vm.network "forwarded_port", guest: 9995, host: 9995
+    ambari.vm.network "forwarded_port", guest: 80, host: 80
   end
 
 end
