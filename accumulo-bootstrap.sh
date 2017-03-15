@@ -14,9 +14,9 @@ export PATH=$PATH:/usr/lib/accumulo/bin:$JAVA_HOME/bin
 
 echo "Installing Accumulo"
 
-curl -O -L -s http://mirrors.koehn.com/apache/accumulo/1.7.0/accumulo-1.7.0-bin.tar.gz
-tar xvzf accumulo-1.7.0-bin.tar.gz
-sudo mv accumulo-1.7.0 /usr/lib/accumulo
+curl -O -L -s http://apache.mirrors.pair.com/accumulo/1.8.1/accumulo-1.8.1-bin.tar.gz
+tar xvzf accumulo-1.8.1-bin.tar.gz
+sudo mv accumulo-1.8.1 /usr/lib/accumulo
 sudo chown -R root:root /usr/lib/accumulo
 
 echo "Configuring Accumulo"
